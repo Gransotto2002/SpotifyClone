@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.menu {
+  background: none;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 999;
+}
+
+.linha1, .linha2, .linha3 {
+  display: block;
+  margin: 5px;
+  width: 20px;
+  border-bottom: 3px solid #fff;
+}
+
+
+.barra {
+  height: 15px;
+  border-right: 1px solid #fff;
+}
+
+.name {
+  font-size: 25px;
+}
+
+.logo {
+  display: flex;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav a:hover {
+  color: rgb(10, 247, 61);
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  background: black;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+header i {
+  font-size: 40px;
+  margin-right: 5px;
+}
+
+
+img {
+  width: 60px;
+}
+
+/* Fim Header */
+
+.container {
+  display: flex;
+  background: #2941AB;
+  background-size: cover;
+  background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+  background-size: 170%;
+  background-position: 44% 7%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Container Principal */
+.principal {
+  width: 1000px;
+  height: 373px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  z-index: 5;
+}
+
+.principal h1 {
+  font-size: 150px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  color: #1ED760;
+}
+
+.principal p {
+  color: #1ED760;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  margin: 30px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  background: #1ED760;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2941AB;
+}
+
+button:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Fim container Principal */
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 80px 50px;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.conteudo {
+  display: flex;
+}
+
+/* Fim footer */
+
+/* Inicio div logo */
+.caixa-logo {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  color: white;
+  font-weight: 600;
+  padding: 0 50px;
+}
+
+.caixa-logo a:hover{
+  color: #1ED760;
+}
+
+
+
+.caixa-logo p {
+  font-size: 25px;
+}
+
+.caixa-logo i {
+  font-size: 40px;
+  margin-right: 8px;
+}
+
+.caixa-logo a {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Fim caixa logo */
+
+/* Inicio caixa empresa */
+.caixa-empresa {
+  flex: 1;
+  padding: 20px;
+  width: 165px;
+  height: 346px;
+}
+
+.caixa-empresa a {
+  display: block;
+  margin: 20px 0;
+}
+
+.caixa-empresa a:hover {
+  color: #1ED760;
+}
+
+.caixa-midia div:hover {
+  color: #1ED760;
+}
+
+
+.caixa-empresa h4 {
+  color: #919496;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+/* Fim caixa Empresa */
+
+
+
+/* Inicio div midias */
+.caixa-midia {
+  display: flex;
+  flex: 2;
+  justify-content: end;
+  width: 300px;
+  color: #fff;
+  padding: 20px;
+}
+
+.caixa-midia i {
+  font-size: 25px;
+}
+
+.insta, .twitter, .facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 5px;
+  background: #222326;
+
+}
+
+/* Fim div midias */
+
+
+/* Responsivo */
+
+@media (max-width : 1440px) {
+
+  .container {
+    background-size: 190%;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .principal h1 {
+    font-size: 100px;
+    color: #1ED760;
+  }
+}
+
+@media (max-width : 1200px) {
+
+  .caixa-midia {
+    justify-content: center;
+  }
+
+}
+
+
+
+@media (max-width : 1020px) {
+
+  .container {
+    background-size: 200%;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .caixa-midia {
+    justify-content: center;
+  }
+
+
+}
+
+@media (max-width : 990px) {
+
+  nav {
+    display: none;
+  }
+
+  .container {
+    background-size: 250%;
+  }
+
+  .principal h1 {
+    font-size: 70px;
+  }
+
+  .principal p {
+    font-size: 20px;
+  }
+
+  .principal button {
+    width: 200px;
+  }
+
+  .menu {
+    display: inline;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .logo>i {
+    font-size: 30px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+}
+
+
+
+
+@media (max-width : 780px) {
+  .container {
+    background-size: 250%;
+  }
+
+  .principal h1 {
+    font-size: 60px;
+  }
+
+  .principal p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width : 780px) {
+
+
+  footer {
+    justify-content: left;
+  }
+
+  .container-footer {
+    flex-direction: column;
+  }
+
+  .caixa-logo {
+    padding: 0px;
+  }
+
+  .caixa-midia {
+    justify-content: left;
+  }
+
+}
+
+@media (max-width : 560px) {
+
+  .principal h1 {
+    font-size: 40px;
+  }
+
+  .principal p {
+    font: 10px;
+  }
+
+  .container {
+    background-size: 350%;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .container {
+    height: 90vh;
+  }
+
+
+  .principal {
+    top: 300px;
+  }
+
+}
+
+@media (max-width : 490px) {
+
+  .principal h1 {
+    font-size: 35px;
+  }
+
+  .principal p {
+    font: 10px;
+  }
+
+  .container {
+    background-size: 350%;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width : 400px) {
+
+  .principal h1 {
+    font-size: 30px;
+  }
+
+  .principal p {
+    font: 8px;
+  }
+
+  .container {
+    background-size: 400%;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+
+  .caixa-empresa {
+    width: 200px;
+  }
+
+  .caixa-midia {
+    padding: 10px;
+    justify-content: left ;
+  }
+
+footer {
+    padding: 10px;
+    width: auto;
+    justify-content: left;
+  }
+
+  .container-footer {
+
+    width: 250px;
+
+  }
+
+  .principal h1 {
+    font-size: 35px;
+  }
+
+}
+
+@media (min-width: 990px) {
+  .menu {
+    display: none;
+  }
+
+  .overlay{
+    display: none;
+  }
+}
+
+/* Navbar responsiva */
+
+
+
+
+
+
+
+@media (max-width: 990px){
+
+  nav{
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 45vw;
+    height: 100vh;
+    padding-left: 30px ;
+    z-index: 999;
+    background-color: #000000;
+  }
+
+  nav a, div {
+    display: block;
+  }
+
+
+  .barra {
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 20px;
+  }
+
+
+  
+
+  .premium {
+    font-size: 35px;
+  }
+
+  .suporte {
+    font-size: 30px;
+  }
+
+  .baixar {
+    font-size: 25px;
+  }
+
+  .inscricao {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  .entrar {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+
+  
+}
+
+@media (min-width: 995px){
+  nav {
+    display: default;
+  }
+}
+
+.overlay {
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.3;
+  position: fixed;
+  z-index: 900;
+}
+
+
+@media (max-width: 600px){
+
+  nav {
+    width: 100vw;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+
+
+}
